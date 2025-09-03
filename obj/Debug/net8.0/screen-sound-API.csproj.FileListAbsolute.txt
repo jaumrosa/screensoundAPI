@@ -32,3 +32,4 @@ C:\Users\Computador\Desktop\Projetos\C#\screen-sound-API\obj\Debug\net8.0\refint
 C:\Users\Computador\Desktop\Projetos\C#\screen-sound-API\obj\Debug\net8.0\screen-sound-API.pdb
 C:\Users\Computador\Desktop\Projetos\C#\screen-sound-API\obj\Debug\net8.0\screen-sound-API.genruntimeconfig.cache
 C:\Users\Computador\Desktop\Projetos\C#\screen-sound-API\obj\Debug\net8.0\ref\screen-sound-API.dll
+C:\Users\Computador\Desktop\Projetos\C#\screen-sound-API\obj\Debug\net8.0\screen-sound-API.sourcelink.json
