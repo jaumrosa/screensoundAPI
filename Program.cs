@@ -11,7 +11,26 @@ using (HttpClient client = new HttpClient())
         //LinqFilter.FiltrarTodosOsGenerosMusicais(musicas);
         //LinqOrder.ExibirListaDeArtistasOrdenados(musicas);
         //LinqFilter.FiltrarArtistasPorGeneroMusical(musicas, "hip hop");
-        LinqFilter.FiltrarMusicasPorArtista(musicas, "Travis Scott");
+        //LinqFilter.FiltrarMusicasPorArtista(musicas, "Travis Scott");
+
+
+        var musicasPreferidasDoJoao = new MusicasPreferidas("João");
+        musicasPreferidasDoJoao.AdicionarMusicasFavoritas(musicas[6]);
+        musicasPreferidasDoJoao.AdicionarMusicasFavoritas(musicas[690]);
+        musicasPreferidasDoJoao.AdicionarMusicasFavoritas(musicas[15]);
+        musicasPreferidasDoJoao.AdicionarMusicasFavoritas(musicas[190]);
+        musicasPreferidasDoJoao.AdicionarMusicasFavoritas(musicas[233]);
+
+        musicasPreferidasDoJoao.ExibirMusicasFavoritas();
+
+        var musicasPreferidasDaGeovana = new MusicasPreferidas("Geovana");
+        musicasPreferidasDaGeovana.AdicionarMusicasFavoritas(musicas[1021]);
+        musicasPreferidasDaGeovana.AdicionarMusicasFavoritas(musicas[292]);
+        musicasPreferidasDaGeovana.AdicionarMusicasFavoritas(musicas[267]);
+        musicasPreferidasDaGeovana.AdicionarMusicasFavoritas(musicas[999]);
+        musicasPreferidasDaGeovana.AdicionarMusicasFavoritas(musicas[12]);
+
+        musicasPreferidasDaGeovana.ExibirMusicasFavoritas();
     
     }
     catch (System.Exception ex)
