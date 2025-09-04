@@ -22,16 +22,17 @@ using (HttpClient client = new HttpClient())
         musicasPreferidasDoJoao.AdicionarMusicasFavoritas(musicas[233]);
 
         musicasPreferidasDoJoao.ExibirMusicasFavoritas();
+        musicasPreferidasDoJoao.GerarArquivoJson();
 
-        var musicasPreferidasDaGeovana = new MusicasPreferidas("Geovana");
-        musicasPreferidasDaGeovana.AdicionarMusicasFavoritas(musicas[1021]);
-        musicasPreferidasDaGeovana.AdicionarMusicasFavoritas(musicas[292]);
-        musicasPreferidasDaGeovana.AdicionarMusicasFavoritas(musicas[267]);
-        musicasPreferidasDaGeovana.AdicionarMusicasFavoritas(musicas[999]);
-        musicasPreferidasDaGeovana.AdicionarMusicasFavoritas(musicas[12]);
+        // var musicasPreferidasDaGeovana = new MusicasPreferidas("Geovana");
+        // musicasPreferidasDaGeovana.AdicionarMusicasFavoritas(musicas[1021]);
+        // musicasPreferidasDaGeovana.AdicionarMusicasFavoritas(musicas[292]);
+        // musicasPreferidasDaGeovana.AdicionarMusicasFavoritas(musicas[267]);
+        // musicasPreferidasDaGeovana.AdicionarMusicasFavoritas(musicas[999]);
+        // musicasPreferidasDaGeovana.AdicionarMusicasFavoritas(musicas[12]);
 
-        musicasPreferidasDaGeovana.ExibirMusicasFavoritas();
-    
+        // musicasPreferidasDaGeovana.ExibirMusicasFavoritas();
+
     }
     catch (System.Exception ex)
     {

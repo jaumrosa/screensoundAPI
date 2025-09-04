@@ -1,3 +1,5 @@
+using System.Text.Json;
+
 namespace ScreenSoundAPI.Modelos;
 
 class MusicasPreferidas
@@ -24,5 +26,19 @@ class MusicasPreferidas
             System.Console.WriteLine($"-> {musica.Nome} de {musica.Artista}");
         }
         System.Console.WriteLine();
+    }
+
+    public void GerarArquivoJson()
+    {
+        string json = JsonSerializer.Serialize(new
+        {
+            nome = Nome,
+            musicas = ListaDeMusicasFavoritas
+        });
+        string nomeDoArquivo = $"musicas-favoritas-{Nome}.json";
+
+        File.WriteAllText(nomeDoArquivo, json);
+        System.Console.WriteLine($"O arquivo JSON das músicas de {Nome} foi criado com sucesso! em {Path.GetFullPath(nomeDoArquivo)}");
+    
     }
 }
